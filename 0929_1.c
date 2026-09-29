@@ -1,9 +1,10 @@
 #include <stdio.h>
 int main()
 {
-    int age;
-    printf("清輸入一個數:");
-    scanf("%d",&age);
-    printf("你輸入的是:%d",age)
+    int card=7;
+    card^=2;
+    printf("%d\n",card);
+    card^=2;
+    printf("%d\n",card);
     return 0;
 }
