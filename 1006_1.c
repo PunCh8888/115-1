@@ -3,25 +3,18 @@
 int main()
 {
     int 年齡;
-    int 身高;
-    printf("請輸入你的年齡：");
+    int 駕照;
+    printf("請輸入年齡：");
     scanf("%d",&年齡);
-    printf("請輸入你的身高：");
-    scanf("%d",&身高);
-    if (年齡>=12)
+    printf("請輸入有無駕照1有0無：");
+    scanf("%d",&駕照);
+    if (年齡>=18 && 駕照==1)
     {
-        if (身高>=120)
-       {
-        printf("可搭乘");
-       }
-       else
-       {
-        printf ("不可搭乘");
-       }   
+        printf("可開");
     }
     else
     {
-        printf ("不可搭乘");
+        printf ("不可開");
     }
     return 0;
 }
