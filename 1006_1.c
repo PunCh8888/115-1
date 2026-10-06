@@ -1,12 +1,17 @@
+
 #include <stdio.h>
 int main()
 {
-    float 成人;
-    printf("請輸入年齡：");
-    scanf("%f",&成人);
-    if (成人>=18);
+    int 成績;
+    printf("請輸入成績：");
+    scanf("%d",&成績);
+    if (成績>=60)
     {
-        printf ("成年人");
+        printf ("及格");
+    }
+    else
+    {
+        printf ("不及格");
     }
     return 0;
 }
