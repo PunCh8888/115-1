@@ -19,7 +19,7 @@ int main()
         printf ("您選擇果汁，價格45元");
         break;
         default:
-        printf("輸入錯誤");
+        printf("無此飲料選項");
     }
     return 0;
 }
