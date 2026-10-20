@@ -1,22 +1,12 @@
 #include <stdio.h>
 int main()
 {
-    int num;
-    printf("請輸入數值，輸入0結束");
-    scanf("%d",&num);
-    while (num!=0)
+    int i=1;
+    do
     {
-        if(num>0)
-        {
-            printf("正數");
-        }
-        else
-        {
-            printf("負數");
-        }
-        printf("請輸入數值，輸入0結束");
-        scanf("%d",&num);
-    }
-     printf("程式結束");
+        printf("請輸入密碼:");
+        scanf("%d",&i);
+    } while (i !=5678);
+    printf("成功登入");
     return 0;
 }
