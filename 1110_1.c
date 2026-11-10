@@ -1,16 +1,14 @@
 #include <stdio.h>
-void count(int n)
+void test()
 {
-    if(n==0)
-    {
-        return;
-    }
-    printf("%d\n",n);
-    count(n-1);
+    static int count=0;
+    count++;
+    printf("%d\n",count);
 }
-
 int main()
 {
-    count(5);
+    test();
+    test();
+    test();
     return 0;
 }
